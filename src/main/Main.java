@@ -35,6 +35,7 @@ public class Main {
         post("/register", new RegisterRoute(dependencies));
         get("/products", new ProductsSummaryRoute(dependencies));
         post("/products", new CreateProductRoute(dependencies));
+        get("/sales-orders", new SalesOrderSummaryRoute(dependencies));
         post("/sales-order", new CreateSalesOrderRoute(dependencies));
         delete("/products/:id", new DeleteProductRoute(dependencies));
     }
